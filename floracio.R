@@ -77,7 +77,7 @@ abline(lmJuny)
 
 mitjanaTempAnual <- (data$temp_gen + data$temp_feb + data$temp_mar + data$temp_abr + data$temp_mai + data$temp_jun) / 6
 plot(data$Any, mitjanaTempAnual,
-        ylab = "Temperatura mitjana anual", xlab = "Any")
+        ylab = "Temperatura mitjana anual", xlab = "Any", cex.lab = 1.3)
 lmMitjanaTemp <- lm(mitjanaTempAnual ~ data$Any) # p-value 0.73, adj Rsq = -0.01, pendent 0.00189
 lmLegend(summary(lmMitjanaTemp))
 abline(lmMitjanaTemp)
@@ -128,7 +128,7 @@ abline(lmJuny)
 
 mitjanaPrecAnual <- (data$prec_gen + data$prec_feb + data$prec_mar + data$prec_abr + data$prec_mai + data$prec_jun) / 6
 plot(data$Any, mitjanaPrecAnual,
-     ylab = "Precipitacio acumulada mitjana anual", xlab = "Any")
+     ylab = "Precipitacio acumulada mitjana anual", xlab = "Any", cex.lab = 1.3)
 lmMitjanaPrec <- lm(mitjanaPrecAnual ~ data$Any) # p-value 0.26, adj Rsq = 0.00492, pendent -0.16
 lmLegend(summary(lmMitjanaPrec))
 abline(lmMitjanaPrec)
