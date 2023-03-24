@@ -21,7 +21,7 @@ hist(data$FL_cydonia.oblonga, breaks = 50)
 shapiro.test(data$FL_cydonia.oblonga) # p-value 0.28
 
 data$FL_malus.domestica[data$FL_malus.domestica > 150] <- NA
-hist(data$FL_malus.domestica, breaks = 50) # outlier a extrem dret
+hist(data$FL_malus.domestica, breaks = 50)
 shapiro.test(data$FL_malus.domestica) # p-value 0.33 GOOD
 
 hist(data$FL_juglans.regia, breaks = 50)
