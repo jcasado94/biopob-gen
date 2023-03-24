@@ -20,8 +20,8 @@ shapiro.test(data$FL_prunus.armeniaca) # p-value 0.43 GOOD
 hist(data$FL_cydonia.oblonga, breaks = 50)
 shapiro.test(data$FL_cydonia.oblonga) # p-value 0.28
 
-hist(data$FL_malus.domestica, breaks = 50) # outlier a extrem dret
 data$FL_malus.domestica[data$FL_malus.domestica > 150] <- NA
+hist(data$FL_malus.domestica, breaks = 50) # outlier a extrem dret
 shapiro.test(data$FL_malus.domestica) # p-value 0.33 GOOD
 
 hist(data$FL_juglans.regia, breaks = 50)
